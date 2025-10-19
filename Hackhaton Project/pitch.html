@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Startup Pitch Generator</title>
+  <link rel="stylesheet" href="pitch-form.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+    <h1>💡 AI Pitch Generator</h1>
+
+    <label>Startup Name</label>
+    <input id="name" placeholder="e.g. MentorMate" />
+
+    <label>Description</label>
+    <textarea id="desc" placeholder="Describe your idea..."></textarea>
+
+    <label>Industry</label>
+    <select id="industry">
+      <option value="" disabled selected>Select Industry</option>
+      <option value="tech">Technology</option>
+      <option value="education">Education</option>
+      <option value="health">Health</option>
+      <option value="finance">Finance</option>
+      <option value="ecommerce">E-commerce</option>
+      <option value="entertainment">Entertainment</option>
+    </select>
+
+    <div id="info" class="info" style="display:none;"></div>
+
+    <button id="generate">Generate Pitch</button>
+    <button id="showAll">Show All</button>
+
+    <div id="output" class="pitch-box"></div>
+  </div>
+
+ 
+  <div id="notify" class="notify"></div>
+
+  <script type="module" src="pitch.js" >
+    
+  </script>
+</body>
+</html>  

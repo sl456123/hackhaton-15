@@ -1,0 +1,158 @@
+/* 🌐 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🌙 Base Styling */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #0a0a0a, #000);
+  color: #fff;
+  padding: 20px;
+}
+
+/* 💠 Login Box */
+.login-box {
+  width: 360px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* 💎 Title */
+.login-box h2 {
+  margin-bottom: 30px;
+  color: #0ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* 🧠 Input Field */
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #0ff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* 🔵 Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #0077ff, #00ffff);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* 🌐 Links */
+.links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== 📱 MEDIA QUERIES ===================== */
+
+/* 📱 Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .links {
+    font-size: 13px;
+  }
+}
+
+/* 📲 Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-box {
+    width: 80%;
+    padding: 35px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+/* 💻 Laptops (769px - 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .login-box {
+    width: 400px;
+    padding: 45px;
+  }
+
+  .login-box h2 {
+    font-size: 26px;
+  }
+}
+
+/* 🖥️ Large Screens (1201px and above) */
+@media (min-width: 1201px) {
+  .login-box {
+    width: 420px;
+    padding: 50px;
+  }
+
+  .login-box h2 {
+    font-size: 28px;
+  }
+}

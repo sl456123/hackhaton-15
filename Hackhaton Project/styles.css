@@ -1,0 +1,86 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top left, #0a0a0a, #000);
+      color: #fff;
+    }
+
+    .signup-box {
+      width: 400px;
+      padding: 45px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(15px);
+      text-align: center;
+    }
+
+    .signup-box h2 {
+      margin-bottom: 30px;
+      color: #0ff;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 15px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #0ff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .input-box input:focus {
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #00ffff, #0077ff);
+      color: #000;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #0077ff, #00ffff);
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
